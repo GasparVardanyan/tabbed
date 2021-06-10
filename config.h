@@ -1,10 +1,13 @@
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
+/// static const char font[]        = "monospace:size=9";
 static const char font[]        = "monospace:size=12";
+/// static const char* normbgcolor  = "#555555";
 static const char* normbgcolor  = "#222222";
 static const char* normfgcolor  = "#cccccc";
-static const char* selbgcolor   = "#555555";
+/// static const char* selbgcolor   = "#555555";
+static const char* selbgcolor   = "#222222";
 static const char* selfgcolor   = "#ffffff";
 static const char* urgbgcolor   = "#111111";
 static const char* urgfgcolor   = "#cc0000";
@@ -68,7 +71,7 @@ static Key keys[] = {
 
 ///		{ MODKEY,               XK_Shift_L, showbar,    { .i = 1 } },
 ///		{ ShiftMask,            XK_Control_L, showbar,    { .i = 1 } },
-	{ MODKEY,               XK_b,      toggleshowbar,{ 0 } },
+	{ MODKEY|ShiftMask,     XK_b,      toggleshowbar,{ 0 } },
 };
 
 ///	static Key keyreleases[] = {
